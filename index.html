@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <!-- google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="default.css">
+    <link id="theme-style" rel="stylesheet" href="">
+</head>
+<body>
+    <section id="intro" class="p">
+        <div class="intro-container">
+            <h1 id="greeting">Hi, I'm Deepak Tiwari</h1>
+            <div id="intro-wrapper">
+                <div class="nav-wrapper">
+                    <div class="dot-nav">
+                        <div id="dot1" class="dots"></div>
+                        <div id="dot2" class="dots"></div>
+                        <div id="dot3" class="dots"></div>
+                    </div>
+                    <nav>
+                        <p id="p1" style="display: none;">f12894343@gmail.com</p>
+                        <ul>
+                            <li><a href="https://www.linkedin.com/in/deepak-tiwari-6b13971b1" target="_blank"><img src="images/linkedin.svg" alt=""></a></li>
+                            <li><a href="https://www.github.com/Deepak-dex"  target="_blank"><img src="images/github.svg" alt=""></a></li>
+                            <li class="tooltip"><a  onclick="copyToClipboard('#p1')">
+                                <img src="images/email.svg" alt="">
+                                <span class="tooltiptext">copy</span>
+                            </a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div id="left-col-intro">
+                    <img id="profile-pic" src="images/profile.jpg" alt="">
+                    <h5 style="text-align: center;line-height: 0; margin-top: 2em;">Personalize Theme</h5>
+                    <div id="theme-options-wrapper">
+                        <div data-mode="light" class="theme-dot" id="light-mode"></div>
+                        <div data-mode="blue" class="theme-dot" id="blue-mode"></div>
+                        <div data-mode="green" class="theme-dot" id="green-mode"></div>
+                        <div data-mode="purple" class="theme-dot" id="purple-mode"></div>
+                    </div>
+                    <p id="settings-note">
+                        *Theme setting will be saved for 
+                        <span style="display: block;">your next visit</span>
+                    </p>
+                </div>
+                <div id="right-col-intro">
+                    <div class="preview-shadow">
+                        <div id="preview">
+                            <h3>What I Do</h3>
+                            <p>On way to become full stack Developer | currently student | Exploring</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="s">
+        <div class="about-container">
+            <div class="about-me">
+                <h4>More about me</h4>
+                <p>Computer Enthusiast, loves Coding and working on projects.I build new projects just to tickle my brain and Know how to learn on the fly</p>
+                <hr>
+                <h4>TOP EXPERTISE</h4>
+                <p>
+                Fullstack developer
+                <a href="resume.pdf" target="_blank">Download Resume</a>
+                </p>
+                <div id="skills">
+                    <ul>
+                        <li>Python</li>
+                        <li>Dart</li>
+                        <li>Java</li>
+                        <li>Javascript</li>
+                        <li>Kotlin</li>
+                    </ul>
+                    <ul>
+                        <li>Django</li>
+                        <li>Flutter</li>
+                        <li>Nodejs</li>
+                        <li>React</li>
+                        <li>Android Studio</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="social-link">
+                <!-- <h4>More about me</h4>
+                <p>I build new projects just to tickle my brain and love teaching others how they're made.</p>
+                <hr>
+                <h4>TOP EXPERTISE</h4>
+                <p
+                >Fullstack developer with primary focus on Django + React
+                <a href="resume.pdf" target="_blank">Download Resume</a>
+                </p> -->
+            </div>
+        </div>
+    </section>
+    <section id="portfolio" class="p">
+        <div class="portfolio-container">
+            <h3 style="text-align: center;">Some of my past projects</h3>
+            <div class="post-wrapper">
+
+                <div class="post">
+                    <img src="images/profile.jpg" alt="" class="post-img">
+                    <div class="post-preview">
+                        <h6 class="post-title">Post Title</h6>
+                        <p class="post-intro">Coming soon</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="post">
+                    <img src="images/profile.jpg" alt="" class="post-img">
+                    <div class="post-preview">
+                        <h6 class="post-title">Post Title</h6>
+                        <p class="post-intro">This is a sentence. with some information about post</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="post">
+                    <img src="images/profile.jpg" alt="" class="post-img">
+                    <div class="post-preview">
+                        <h6 class="post-title">Post Title</h6>
+                        <p class="post-intro">Coming Soon.</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="s">
+        <div class="contact-container">
+            <h3 style="text-align: center;">Get In Touch</h3>
+            <form action="" id="contact-form">
+                <label for="name">Name</label>
+                <input class="input-field" type="text" name="name">
+                
+                <label for="subject">Subject</label>
+                <input class="input-field" type="text" name="subject">
+                
+                <label for="email">Email</label>
+                <input class="input-field" type="email" name="email">
+                
+                <label for="Message">Message</label>
+                <textarea class="input-field"  name="message"></textarea>
+                
+                <input id="submit-btn" type="submit" value="Send">
+            </form>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>

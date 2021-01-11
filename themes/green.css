@@ -1,0 +1,15 @@
+:root{
+    --primary-color:#606b56;
+    --secondary-color: #515a48;
+    
+    --border-color: #161914;
+    --theme-dot-border:#ffffff;
+
+    --primary-text-color: #fff;
+    --secondary-text-color: #eeeeee;
+
+    --previewBg: rgb(81,90,72,0.8);
+    --preview-shadow: #2a2f25;
+    
+    --button-color:#669966;
+}
